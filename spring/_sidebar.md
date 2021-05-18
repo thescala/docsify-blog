@@ -2,3 +2,5 @@
   - [Maven](/spring/Maven命令.md)
 - Redis
   - [Redis](/spring/Redis.md)
+- SpringBoot
+  - [SpringBoot 项目启动时执行指定代码的几种方式](/spring/SpringBoot项目启动时执行指定代码的几种方式.md)
