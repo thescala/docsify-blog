@@ -1,3 +1,3 @@
-
-* Java
-  * [jvm](./java/jvm.md)
+- Java
+  - [LinkedList 常用方法](/java/LinkedList.md)
+  - [jvm](/java/jvm.md)
