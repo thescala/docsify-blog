@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
   <head>
     <meta charset="UTF-8" />
     <title>docsify-blog</title>
@@ -47,6 +47,11 @@
           hideOtherSidebarContent: false,
           namespace: 'docsify-blog'
         }
+      }
+    </script>
+    <script>
+      if (typeof navigator.serviceWorker !== 'undefined') {
+        navigator.serviceWorker.register('sw.js')
       }
     </script>
     <!-- docsify的js依赖 -->

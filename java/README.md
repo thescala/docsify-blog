@@ -1,4 +1,4 @@
 # Java 专栏
 
 - Java
-  - [jvm](./java/jvm.md)
+  - [jvm](/java/jvm.md)
