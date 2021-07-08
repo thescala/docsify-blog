@@ -146,6 +146,12 @@ $ git branch -d <分支名称>
 
 # 强制删除指定的本地分支
 $ git branch -D <分支名称>
+
+# 查看远程分支
+$ git branch -r
+
+# 查看所有分支（本地和远程）
+$ git branch -a
 ```
 
 ## git checkout
@@ -281,7 +287,6 @@ $ git pull
 $ git push <远程仓库的别名> <本地分支名>:<远程分支名>
 
 # 删除指定的远程仓库的分支
-$ git push <远程仓库的别名> :<远程分支名>
 $ git push <远程仓库的别名> --delete <远程分支名>
 ```
 
