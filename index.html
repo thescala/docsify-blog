@@ -22,9 +22,9 @@
         repo: 'https://gitee.com/bqxt/docsify-blog.git',
         // 侧边栏支持，默认加载的是项目根目录下的_sidebar.md文件
         loadSidebar: true,
-        // alias: {
-        //   '/.*/_sidebar.md': '/_sidebar.md'
-        // },
+        mergeNavbar: true,
+        formatUpdated: '{YYYY}/{MM}/{DD} {HH}:{mm}',
+        // autoHeader: true,
         // 导航栏支持，默认加载的是项目根目录下的_navbar.md文件
         loadNavbar: true,
         // 封面支持，默认加载的是项目根目录下的_coverpage.md文件
@@ -32,7 +32,28 @@
         // 最大支持渲染的标题层级
         maxLevel: 4,
         // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级，建议配置为1或者2
-        subMaxLevel: 2
+        subMaxLevel: 2,
+        plugins: [
+          function (hook, vm) {
+            hook.beforeEach(function (html) {
+              var url = 'https://gitee.com/bqxt/docsify-blog/master/' + vm.route.file
+              var editHtml = '[📝 EDIT DOCUMENT](' + url + ')\n'
+              var editHtml_end = '[🖊 Edit Document](' + url + ')\n'
+              return editHtml + html + '\n \n更新于：{docsify-updated}'
+            })
+          }
+        ],
+        scrollToTop: {
+          auto: true,
+          text: 'Top',
+          right: 15,
+          bottom: 15,
+          offset: 500
+        },
+        pagination: {
+          previousText: '上一章节',
+          nextText: '下一章节'
+        }
       }
     </script>
     <script>
@@ -62,5 +83,14 @@
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
     <!-- 搜索功能支持 -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <!-- 返回顶部 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-scroll-to-top@1.0.2/dist/docsify-scroll-to-top.min.js"></script>
+    <!-- 上一页 下一页 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-pagination@2.6.1/dist/docsify-pagination.min.js"></script>
+    <!-- 语法高亮 -->
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-git.min.js"></script>
   </body>
 </html>

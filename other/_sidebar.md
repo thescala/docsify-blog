@@ -1,4 +1,5 @@
 - Git
   - [Git 命令](/other/git_operation.md)
+  - [Git:remote:User permission denied 解决](/other/git_permission_denied.md)
 - Docker
   - [docker 常用命令](/other/docker_usage.md)
