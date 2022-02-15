@@ -2,6 +2,8 @@
 
 > An awesome project.
 
+[🐰 导航](/navlist/)
+
 [❤️ Spring 专栏](/spring/)
 
 [🐻 Java 专栏](/java/)
