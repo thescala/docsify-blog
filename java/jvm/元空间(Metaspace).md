@@ -27,11 +27,11 @@ Metaspace 由两大部分组成：Klass Metaspace 和 NoKlass Metaspace。
     紧接着 Heap，和之前的 perm 一样。通过-XX:CompressedClassSpaceSize 来控制这块内存的大小，默认是 1G。  
     下图展示了对象的存储模型,\_mark 是对象的 Mark Word,\_klass 是元数据指针
 
-![](../_images/java/jvm/hasccs.jpg)
+![](../../_images/java/jvm/hasccs.jpg)
 
 3.  Compressed Class Pointer Space **不是必须有的**，如果设置了 **-XX:-UseCompressedClassPointers**，或者 **-Xmx 设置大于 32G**，就不会有这块内存，这种情况下 klass 都会存在 NoKlass Metaspace 里。
 
-![](../_images/java/jvm/noccs.jpg)
+![](../../_images/java/jvm/noccs.jpg)
 
 - **NoKlass Metaspace**
 
@@ -56,7 +56,7 @@ Metaspace VM 使用一个**块分配器(chunking allocator)**来管理 Metaspace
 Metaspace VM 中有一个全局的可使用的**块列表（a global free list of chunks）**。当类加载器需要一个块的时候，类加载器从全局块列表中取出一个块，添加到它自己维护的块列表中。当类加载器死亡，它的块将会被释放，归还给全局的块列表。  
 块（chunk）会进一步被划分成 blocks,每个 block 存储一个元数据单元(a unit of metadata)。Chunk 中 Blocks 的是分配线性的（pointer bump）。这些 chunks 被分配在内存映射空间(memory mapped(mmapped) spaces)之外。在一个全局的虚拟内存映射空间（global virtual mmapped spaces）的链表，当任何虚拟空间变为空时，就将该虚拟空间归还回操作系统。
 
-![](../_images/java/jvm/metachunks.jpg)
+![](../../_images/java/jvm/metachunks.jpg)
 
 metachunks.jpg
 

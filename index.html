@@ -3,13 +3,18 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>docsify-blog</title>
+  <title>日月光华，弘于一人</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <meta name="description" content="Description" />
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4.12.1/lib/themes/vue.css" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4.12.2/lib/themes/vue.css" />
+  <link rel="stylesheet" href="./main.css">
+  <style>
+    .markdown-section {
+      max-width: 90%;
+    }
+  </style>
 </head>
 
 <body>
@@ -17,12 +22,17 @@
   <script>
     window.$docsify = {
       // 项目名称
-      name: 'docsify-blog',
+      name: '日月光华，弘于一人',
       // 仓库地址，点击右上角的Github章鱼猫头像会跳转到此地址
       repo: 'https://github.com/thescala/docsify-blog.git',
+      // alias: {
+      //   '/.*/_sidebar.md': '/_sidebar.md',
+      //   '/.*/_navbar.md': '/_navbar.md',
+      // },
       // 侧边栏支持，默认加载的是项目根目录下的_sidebar.md文件
       loadSidebar: true,
       mergeNavbar: true,
+      auto2top: true,
       formatUpdated: '{YYYY}/{MM}/{DD} {HH}:{mm}',
       // autoHeader: true,
       // 导航栏支持，默认加载的是项目根目录下的_navbar.md文件
@@ -33,6 +43,7 @@
       maxLevel: 4,
       // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级，建议配置为1或者2
       subMaxLevel: 2,
+      relativePath: true,
       plugins: [
         function (hook, vm) {
           hook.beforeEach(function (html) {
@@ -53,15 +64,9 @@
       pagination: {
         previousText: '上一章节',
         nextText: '下一章节'
-      }
-    }
-  </script>
-  <script>
-    // 搜索配置
-    window.$docsify = {
+      },
       search: {
         maxAge: 86400000,
-        paths: auto,
         placeholder: '搜索',
         noData: '找不到结果',
         depth: 4,
@@ -75,14 +80,16 @@
       navigator.serviceWorker.register('sw.js')
     }
   </script>
+  <!-- vue -->
+  <script src="//cdn.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>
   <!-- docsify的js依赖 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4.12.1/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4.12.2/lib/docsify.min.js"></script>
   <!-- emoji表情支持 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4.12.1/lib/plugins/emoji.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4.12.2/lib/plugins/emoji.min.js"></script>
   <!-- 图片放大缩小支持 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4.12.1/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4.12.2/lib/plugins/zoom-image.min.js"></script>
   <!-- 搜索功能支持 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4.12.1/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4.12.2/lib/plugins/search.min.js"></script>
   <!-- 返回顶部 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-scroll-to-top@1.0.2/dist/docsify-scroll-to-top.min.js"></script>
   <!-- 上一页 下一页 -->
@@ -94,6 +101,9 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.26.0/components/prism-git.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.26.0/components/prism-nginx.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.26.0/components/prism-regex.min.js"></script>
+
+  <!-- mouse click -->
+  <script src="//cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/click_heart.js"></script>
 </body>
 
 </html>

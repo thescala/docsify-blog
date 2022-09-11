@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>简单精美的纯CSS垂直手风琴菜单DEMO演示</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+    <link rel="stylesheet" href="./temp.css">
+    <!--[if !IE]>
+    <style>
+    html{overflow:hidden}
+    body{height:100%;overflow:auto}
+    .ielow{ text-align: center;}
+    .ielow h2,.ielow a{margin: 10px 10px;padding: 10px 10px;}
+    .ielow a{font-size: x-large;font-weight: 900;}
+    </style>
+    <div class="ielow">
+       <h2 class="title">您正在使用的浏览器版本过低，为了您的最佳体验，请先升级浏览器。</h2>
+      <a href="https://www.google.cn/intl/zh-CN/chrome/" class="tb-ie-updater-google" target="_blank">谷歌 Chrome</a>
+      <a href="https://www.mozilla.org/zh-CN/firefox/" class="tb-ie-updater-firefox" target="_blank">Firefox 浏览器</a>"
+    </div>
+    <![endif]-->
+</head>
+<body>
+    <div class='left'>
+        <div class="left_inner">
+            <main>
+                <div>
+                    <input id="tab1" type="radio" name="tabs" checked>
+                    <label for="tab1">综艺大热门2015</label>
+                    <input id="tab2" type="radio" name="tabs">
+                    <label for="tab2">综艺大热门2021</label>
+                    <input id="tab3" type="radio" name="tabs">
+                    <label for="tab3">综艺大热门2022</label>
+                    <input id="tab4" type="radio" name="tabs">
+                    <label for="tab4">综艺大热门[部分]</label>
+                </div>
+                <section class="scroll">
+                    <div id="effects" class="effects">
+                        <a href="https://www.acfun.cn/player/ac16728093" target="_blank"
+                            class="hvr-grow-shadow">大热门20150331</a>
+                        <a href="https://www.acfun.cn/player/ac16728044" target="_blank"
+                            class="hvr-grow-shadow">大热门20150401</a>
+                        <a href="https://www.acfun.cn/player/ac16740731" target="_blank"
+                            class="hvr-grow-shadow">大热门20150402</a>
+                        <a href="https://www.acfun.cn/player/ac16740816" target="_blank"
+                            class="hvr-grow-shadow">大热门20150403</a>
+                        <a href="https://www.acfun.cn/player/ac16740797" target="_blank"
+                            class="hvr-grow-shadow">大热门20150406</a>
+                        <a href="https://www.acfun.cn/player/ac16740824" target="_blank"
+                            class="hvr-grow-shadow">大热门20150407</a>
+                        <a href="https://www.acfun.cn/player/ac16741696" target="_blank"
+                            class="hvr-grow-shadow">大热门20150414</a>
+                        <a href="https://www.acfun.cn/player/ac16741701" target="_blank"
+                            class="hvr-grow-shadow">大热门20150415</a>
+                        <a href="https://www.acfun.cn/player/ac16741706" target="_blank"
+                            class="hvr-grow-shadow">大热门20150416</a>
+                        <a href="https://www.acfun.cn/player/ac16741710" target="_blank"
+                            class="hvr-grow-shadow">大热门20150417</a>
+                        <a href="https://www.acfun.cn/player/ac16753846" target="_blank"
+                            class="hvr-grow-shadow">大热门20150420</a>
+                        <a href="https://www.acfun.cn/player/ac16753853" target="_blank"
+                            class="hvr-grow-shadow">大热门20150421</a>
+                        <a href="https://www.acfun.cn/player/ac16753857" target="_blank"
+                            class="hvr-grow-shadow">大热门20150422</a>
+                        <a href="https://www.acfun.cn/player/ac16753860" target="_blank"
+                            class="hvr-grow-shadow">大热门20150423</a>
+                        <a href="https://www.acfun.cn/player/ac16760724" target="_blank"
+                            class="hvr-grow-shadow">大热门20150424</a>
+                        <a href="https://www.acfun.cn/player/ac16760693" target="_blank"
+                            class="hvr-grow-shadow">大热门20150429</a>
+                        <a href="https://www.acfun.cn/player/ac16760757" target="_blank"
+                            class="hvr-grow-shadow">大热门20150430</a>
+                        <a href="https://www.acfun.cn/player/ac16760763" target="_blank"
+                            class="hvr-grow-shadow">大热门20150501</a>
+                        <a href="https://www.acfun.cn/player/ac16835292" target="_blank"
+                            class="hvr-grow-shadow">大热门20150504</a>
+                        <a href="https://www.acfun.cn/player/ac16835321" target="_blank"
+                            class="hvr-grow-shadow">大热门20150505</a>
+                        <a href="https://www.acfun.cn/player/ac16835330" target="_blank"
+                            class="hvr-grow-shadow">大热门20150506</a>
+                        <a href="https://www.acfun.cn/player/ac16835334" target="_blank"
+                            class="hvr-grow-shadow">大热门20150507</a>
+                        <a href="https://www.acfun.cn/player/ac16843937" target="_blank"
+                            class="hvr-grow-shadow">大热门20150508</a>
+                        <a href="https://www.acfun.cn/player/ac16843991" target="_blank"
+                            class="hvr-grow-shadow">大热门20150511</a>
+                        <a href="https://www.acfun.cn/player/ac16843924" target="_blank"
+                            class="hvr-grow-shadow">大热门20150512</a>
+                        <a href="https://www.acfun.cn/player/ac16843928" target="_blank"
+                            class="hvr-grow-shadow">大热门20150513</a>
+                        <a href="https://www.acfun.cn/player/ac16843966" target="_blank"
+                            class="hvr-grow-shadow">大热门20150514</a>
+                        <a href="https://www.acfun.cn/player/ac16886106" target="_blank"
+                            class="hvr-grow-shadow">大热门20150515</a>
+                        <a href="https://www.acfun.cn/player/ac16886069" target="_blank"
+                            class="hvr-grow-shadow">大热门20150518</a>
+                        <a href="https://www.acfun.cn/player/ac16886138" target="_blank"
+                            class="hvr-grow-shadow">大热门20150519</a>
+                        <a href="https://www.acfun.cn/player/ac16886131" target="_blank"
+                            class="hvr-grow-shadow">大热门20150520</a>
+                        <a href="https://www.acfun.cn/player/ac16886137" target="_blank"
+                            class="hvr-grow-shadow">大热门20150521</a>
+                        <a href="https://www.acfun.cn/player/ac16886126" target="_blank"
+                            class="hvr-grow-shadow">大热门20150522</a>
+                        <a href="https://www.acfun.cn/player/ac16886607" target="_blank"
+                            class="hvr-grow-shadow">大热门20150525</a>
+                        <a href="https://www.acfun.cn/player/ac16886610" target="_blank"
+                            class="hvr-grow-shadow">大热门20150526</a>
+                        <a href="https://www.acfun.cn/player/ac16886597" target="_blank"
+                            class="hvr-grow-shadow">大热门20150527</a>
+                        <a href="https://www.acfun.cn/player/ac16886583" target="_blank"
+                            class="hvr-grow-shadow">大热门20150528</a>
+                        <a href="https://www.acfun.cn/player/ac16889265" target="_blank"
+                            class="hvr-grow-shadow">大热门20150529</a>
+                        <a href="https://www.acfun.cn/player/ac16889269" target="_blank"
+                            class="hvr-grow-shadow">大热门20150601</a>
+                        <a href="https://www.acfun.cn/player/ac16888856" target="_blank"
+                            class="hvr-grow-shadow">大热门20150602</a>
+                        <a href="https://www.acfun.cn/player/ac16889278" target="_blank"
+                            class="hvr-grow-shadow">大热门20150603</a>
+                        <a href="https://www.acfun.cn/player/ac16889284" target="_blank"
+                            class="hvr-grow-shadow">大热门20150604</a>
+                        <a href="https://www.acfun.cn/player/ac16889290" target="_blank"
+                            class="hvr-grow-shadow">大热门20150605</a>
+                        <a href="https://www.acfun.cn/player/ac16889293" target="_blank"
+                            class="hvr-grow-shadow">大热门20150608</a>
+                        <a href="https://www.acfun.cn/player/ac16889297" target="_blank"
+                            class="hvr-grow-shadow">大热门20150609</a>
+                        <a href="https://www.acfun.cn/player/ac16889562" target="_blank"
+                            class="hvr-grow-shadow">大热门20150610</a>
+                        <a href="https://www.acfun.cn/player/ac16889531" target="_blank"
+                            class="hvr-grow-shadow">大热门20150611</a>
+                        <a href="https://www.acfun.cn/player/ac16889568" target="_blank"
+                            class="hvr-grow-shadow">大热门20150612</a>
+                        <a href="https://www.acfun.cn/player/ac16889565" target="_blank"
+                            class="hvr-grow-shadow">大热门20150615</a>
+                        <a href="https://www.acfun.cn/player/ac16940484" target="_blank"
+                            class="hvr-grow-shadow">大热门20150617</a>
+                        <a href="https://www.acfun.cn/player/ac16989384" target="_blank"
+                            class="hvr-grow-shadow">大热门20150618</a>
+                        <a href="https://www.acfun.cn/player/ac16989385" target="_blank"
+                            class="hvr-grow-shadow">大热门20150619</a>
+                        <a href="https://www.acfun.cn/player/ac16989388" target="_blank"
+                            class="hvr-grow-shadow">大热门20150622</a>
+                        <a href="https://www.acfun.cn/player/ac16989393" target="_blank"
+                            class="hvr-grow-shadow">大热门20150623</a>
+                        <a href="https://www.acfun.cn/player/ac16989395" target="_blank"
+                            class="hvr-grow-shadow">大热门20150624</a>
+                        <a href="https://www.acfun.cn/player/ac16989396" target="_blank"
+                            class="hvr-grow-shadow">大热门20150625</a>
+                        <a href="https://www.acfun.cn/player/ac16989397" target="_blank"
+                            class="hvr-grow-shadow">大热门20150626</a>
+                        <a href="https://www.acfun.cn/player/ac17022730" target="_blank"
+                            class="hvr-grow-shadow">大热门20150629</a>
+                        <a href="https://www.acfun.cn/player/ac17022724" target="_blank"
+                            class="hvr-grow-shadow">大热门20150630</a>
+                        <a href="https://www.acfun.cn/player/ac17022715" target="_blank"
+                            class="hvr-grow-shadow">大热门20150701</a>
+                        <a href="https://www.acfun.cn/player/ac17022700" target="_blank"
+                            class="hvr-grow-shadow">大热门20150702</a>
+                        <a href="https://www.acfun.cn/player/ac17022695" target="_blank"
+                            class="hvr-grow-shadow">大热门20150703</a>
+                        <a href="https://www.acfun.cn/player/ac17022691" target="_blank"
+                            class="hvr-grow-shadow">大热门20150706</a>
+                        <a href="https://www.acfun.cn/player/ac17022685" target="_blank"
+                            class="hvr-grow-shadow">大热门20150707</a>
+                        <a href="https://www.acfun.cn/player/ac17022678" target="_blank"
+                            class="hvr-grow-shadow">大热门20150708</a>
+                        <a href="https://www.acfun.cn/player/ac17022669" target="_blank"
+                            class="hvr-grow-shadow">大热门20150709</a>
+                        <a href="https://www.acfun.cn/player/ac17022661" target="_blank"
+                            class="hvr-grow-shadow">大热门20150710</a>
+                        <a href="https://www.acfun.cn/player/ac17112613" target="_blank"
+                            class="hvr-grow-shadow">大热门20150713</a>
+                        <a href="https://www.acfun.cn/player/ac17096125" target="_blank"
+                            class="hvr-grow-shadow">大热门20150714</a>
+                        <a href="https://www.acfun.cn/player/ac17095751" target="_blank"
+                            class="hvr-grow-shadow">大热门20150715</a>
+                        <a href="https://www.acfun.cn/player/ac17096158" target="_blank"
+                            class="hvr-grow-shadow">大热门20150716</a>
+                        <a href="https://www.acfun.cn/player/ac17096040" target="_blank"
+                            class="hvr-grow-shadow">大热门20150717</a>
+                        <a href="https://www.acfun.cn/player/ac17096081" target="_blank"
+                            class="hvr-grow-shadow">大热门20150720</a>
+                        <a href="https://www.acfun.cn/player/ac17096169" target="_blank"
+                            class="hvr-grow-shadow">大热门20150721</a>
+                        <a href="https://www.acfun.cn/player/ac17096149" target="_blank"
+                            class="hvr-grow-shadow">大热门20150722</a>
+                    </div>
+                </section>
+                <section class="scroll">
+                    <div id="effects" class="effects">
+                        <a href="https://www.acfun.cn/player/ac13274160" target="_blank"
+                            class="hvr-grow-shadow">大热门20200227</a>
+                        <a href="https://www.acfun.cn/player/ac13379921" target="_blank"
+                            class="hvr-grow-shadow">大热门20200303</a>
+                        <a href="https://www.acfun.cn/player/ac13397966" target="_blank"
+                            class="hvr-grow-shadow">大热门20200304</a>
+                        <a href="https://www.acfun.cn/player/ac13491651" target="_blank"
+                            class="hvr-grow-shadow">大热门20200305</a>
+                        <a href="https://www.acfun.cn/player/ac13533236" target="_blank"
+                            class="hvr-grow-shadow">大热门20200306</a>
+                        <a href="https://www.acfun.cn/player/ac13618627" target="_blank"
+                            class="hvr-grow-shadow">大热门20200310</a>
+                        <a href="https://www.acfun.cn/player/ac13640094" target="_blank"
+                            class="hvr-grow-shadow">大热门20200311</a>
+                        <a href="https://www.acfun.cn/player/ac13662814" target="_blank"
+                            class="hvr-grow-shadow">大热门20200312</a>
+                        <a href="https://www.acfun.cn/player/ac13786778" target="_blank"
+                            class="hvr-grow-shadow">大热门20200313</a>
+                        <a href="https://www.acfun.cn/player/ac13920158" target="_blank"
+                            class="hvr-grow-shadow">大热门20200317</a>
+                        <a href="https://www.acfun.cn/player/ac13944303" target="_blank"
+                            class="hvr-grow-shadow">大热门20200318</a>
+                        <a href="https://www.acfun.cn/player/ac13968128" target="_blank"
+                            class="hvr-grow-shadow">大热门20200319</a>
+                        <a href="https://www.acfun.cn/player/ac14026872" target="_blank"
+                            class="hvr-grow-shadow">大热门20200320</a>
+                        <a href="https://www.acfun.cn/player/ac14140116" target="_blank"
+                            class="hvr-grow-shadow">大热门20200324</a>
+                        <a href="https://www.acfun.cn/player/ac14205484" target="_blank"
+                            class="hvr-grow-shadow">大热门20200325</a>
+                        <a href="https://www.acfun.cn/player/ac14250435" target="_blank"
+                            class="hvr-grow-shadow">大热门20200326</a>
+                        <a href="https://www.acfun.cn/player/ac14405738" target="_blank"
+                            class="hvr-grow-shadow">大热门20200401</a>
+                        <a href="https://www.acfun.cn/player/ac14430701" target="_blank"
+                            class="hvr-grow-shadow">大热门20200402</a>
+                        <a href="https://www.acfun.cn/player/ac14461643" target="_blank"
+                            class="hvr-grow-shadow">大热门20200403</a>
+                        <a href="https://www.acfun.cn/player/ac14528352" target="_blank"
+                            class="hvr-grow-shadow">大热门20200407</a>
+                        <a href="https://www.acfun.cn/player/ac14556489" target="_blank"
+                            class="hvr-grow-shadow">大热门20200408</a>
+                        <a href="https://www.acfun.cn/player/ac14583953" target="_blank"
+                            class="hvr-grow-shadow">大热门20200409</a>
+                        <a href="https://www.acfun.cn/player/ac14636448" target="_blank"
+                            class="hvr-grow-shadow">大热门20200410</a>
+                        <a href="https://www.acfun.cn/player/ac14769112" target="_blank"
+                            class="hvr-grow-shadow">大热门20200415</a>
+                        <a href="https://www.acfun.cn/player/ac14798070" target="_blank"
+                            class="hvr-grow-shadow">大热门20200416</a>
+                        <a href="https://www.acfun.cn/player/ac14855491" target="_blank"
+                            class="hvr-grow-shadow">大热门20200417</a>
+                        <a href="https://www.acfun.cn/player/ac14956651" target="_blank"
+                            class="hvr-grow-shadow">大热门20200421</a>
+                        <a href="https://www.acfun.cn/player/ac14981739" target="_blank"
+                            class="hvr-grow-shadow">大热门20200422</a>
+                        <a href="https://www.acfun.cn/player/ac15040679" target="_blank"
+                            class="hvr-grow-shadow">大热门20200423</a>
+                        <a href="https://www.acfun.cn/player/ac15104723" target="_blank"
+                            class="hvr-grow-shadow">大热门20200424</a>
+                        <a href="https://www.acfun.cn/player/ac15199977" target="_blank"
+                            class="hvr-grow-shadow">大热门20200428</a>
+                        <a href="https://www.acfun.cn/player/ac15228711" target="_blank"
+                            class="hvr-grow-shadow">大热门20200429</a>
+                        <a href="https://www.acfun.cn/player/ac15254059" target="_blank"
+                            class="hvr-grow-shadow">大热门20200430</a>
+                        <a href="https://www.acfun.cn/player/ac15278069" target="_blank"
+                            class="hvr-grow-shadow">大热门20200501</a>
+                        <a href="https://www.acfun.cn/player/ac15346469" target="_blank"
+                            class="hvr-grow-shadow">大热门20200505</a>
+                        <a href="https://www.acfun.cn/player/ac15390971" target="_blank"
+                            class="hvr-grow-shadow">大热门20200507</a>
+                        <a href="https://www.acfun.cn/player/ac15413845" target="_blank"
+                            class="hvr-grow-shadow">大热门20200508</a>
+                        <a href="https://www.acfun.cn/player/ac15493554" target="_blank"
+                            class="hvr-grow-shadow">大热门20200512</a>
+                        <a href="https://www.acfun.cn/player/ac15514454" target="_blank"
+                            class="hvr-grow-shadow">大热门20200513</a>
+                        <a href="https://www.acfun.cn/player/ac15535160" target="_blank"
+                            class="hvr-grow-shadow">大热门20200514</a>
+                        <a href="https://www.acfun.cn/player/ac15563514" target="_blank"
+                            class="hvr-grow-shadow">大热门20200515</a>
+                        <a href="https://www.acfun.cn/player/ac15638648" target="_blank"
+                            class="hvr-grow-shadow">大热门20200519</a>
+                        <a href="https://www.acfun.cn/player/ac15682525" target="_blank"
+                            class="hvr-grow-shadow">大热门20200521</a>
+                        <a href="https://www.acfun.cn/player/ac15703458" target="_blank"
+                            class="hvr-grow-shadow">大热门20200522</a>
+                        <a href="https://www.acfun.cn/player/ac15799879" target="_blank"
+                            class="hvr-grow-shadow">大热门20200526</a>
+                        <a href="https://www.acfun.cn/player/ac15834210" target="_blank"
+                            class="hvr-grow-shadow">大热门20200528</a>
+                        <a href="https://www.acfun.cn/player/ac15855611" target="_blank"
+                            class="hvr-grow-shadow">大热门20200529</a>
+                        <a href="https://www.acfun.cn/player/ac15959688" target="_blank"
+                            class="hvr-grow-shadow">大热门20200602</a>
+                        <a href="https://www.acfun.cn/player/ac15999748" target="_blank"
+                            class="hvr-grow-shadow">大热门20200604</a>
+                        <a href="https://www.acfun.cn/player/ac16019313" target="_blank"
+                            class="hvr-grow-shadow">大热门20200605</a>
+                        <a href="https://www.acfun.cn/player/ac16099133" target="_blank"
+                            class="hvr-grow-shadow">大热门20200609</a>
+                        <a href="https://www.acfun.cn/player/ac16118598" target="_blank"
+                            class="hvr-grow-shadow">大热门20200610</a>
+                        <a href="https://www.acfun.cn/player/ac16138630" target="_blank"
+                            class="hvr-grow-shadow">大热门20200611</a>
+                        <a href="https://www.acfun.cn/player/ac16156595" target="_blank"
+                            class="hvr-grow-shadow">大热门20200612</a>
+                        <a href="https://www.acfun.cn/player/ac16237574" target="_blank"
+                            class="hvr-grow-shadow">大热门20200616</a>
+                        <a href="https://www.acfun.cn/player/ac16249592" target="_blank"
+                            class="hvr-grow-shadow">大热门20200617</a>
+                        <a href="https://www.acfun.cn/player/ac16267977" target="_blank"
+                            class="hvr-grow-shadow">大热门20200618</a>
+                        <a href="https://www.acfun.cn/player/ac16295032" target="_blank"
+                            class="hvr-grow-shadow">大热门20200619</a>
+                        <a href="https://www.acfun.cn/player/ac16288759" target="_blank"
+                            class="hvr-grow-shadow">大热门20200619</a>
+                        <a href="https://www.acfun.cn/player/ac16287170" target="_blank"
+                            class="hvr-grow-shadow">大热门20200619</a>
+                        <a href="https://www.acfun.cn/player/ac16355848" target="_blank"
+                            class="hvr-grow-shadow">大热门20200623</a>
+                        <a href="https://www.acfun.cn/player/ac16383883" target="_blank"
+                            class="hvr-grow-shadow">大热门20200624</a>
+                        <a href="https://www.acfun.cn/player/ac16442101" target="_blank"
+                            class="hvr-grow-shadow">大热门20200625</a>
+                        <a href="https://www.acfun.cn/player/ac16458573" target="_blank"
+                            class="hvr-grow-shadow">大热门20200626</a>
+                        <a href="https://www.acfun.cn/player/ac16530296" target="_blank"
+                            class="hvr-grow-shadow">大热门20200630</a>
+                        <a href="https://www.acfun.cn/player/ac16558697" target="_blank"
+                            class="hvr-grow-shadow">大热门20200701</a>
+                        <a href="https://www.acfun.cn/player/ac16595515" target="_blank"
+                            class="hvr-grow-shadow">大热门20200702</a>
+                        <a href="https://www.acfun.cn/player/ac16613560" target="_blank"
+                            class="hvr-grow-shadow">大热门20200703</a>
+                        <a href="https://www.acfun.cn/player/ac16705275" target="_blank"
+                            class="hvr-grow-shadow">大热门20200707</a>
+                        <a href="https://www.acfun.cn/player/ac16719048" target="_blank"
+                            class="hvr-grow-shadow">大热门20200708</a>
+                        <a href="https://www.acfun.cn/player/ac16738038" target="_blank"
+                            class="hvr-grow-shadow">大热门20200709</a>
+                        <a href="https://www.acfun.cn/player/ac16749529" target="_blank"
+                            class="hvr-grow-shadow">大热门20200710</a>
+                        <a href="https://www.acfun.cn/player/ac16831854" target="_blank"
+                            class="hvr-grow-shadow">大热门20200714</a>
+                        <a href="https://www.acfun.cn/player/ac16847872" target="_blank"
+                            class="hvr-grow-shadow">大热门20200715</a>
+                        <a href="https://www.acfun.cn/player/ac16863519" target="_blank"
+                            class="hvr-grow-shadow">大热门20200716</a>
+                        <a href="https://www.acfun.cn/player/ac16878680" target="_blank"
+                            class="hvr-grow-shadow">大热门20200717</a>
+                        <a href="https://www.acfun.cn/player/ac16937759" target="_blank"
+                            class="hvr-grow-shadow">大热门20200721</a>
+                        <a href="https://www.acfun.cn/player/ac16976568" target="_blank"
+                            class="hvr-grow-shadow">大热门20200722</a>
+                        <a href="https://www.acfun.cn/player/ac16991104" target="_blank"
+                            class="hvr-grow-shadow">大热门20200723</a>
+                        <a href="https://www.acfun.cn/player/ac17007132" target="_blank"
+                            class="hvr-grow-shadow">大热门20200724</a>
+                        <a href="https://www.acfun.cn/player/ac17081356" target="_blank"
+                            class="hvr-grow-shadow">大热门20200728</a>
+                        <a href="https://www.acfun.cn/player/ac17127028" target="_blank"
+                            class="hvr-grow-shadow">大热门20200730</a>
+                        <a href="https://www.acfun.cn/player/ac17149784" target="_blank"
+                            class="hvr-grow-shadow">大热门20200731</a>
+                        <a href="https://www.acfun.cn/player/ac17224913" target="_blank"
+                            class="hvr-grow-shadow">大热门20200804</a>
+                        <a href="https://www.acfun.cn/player/ac17242342" target="_blank"
+                            class="hvr-grow-shadow">大热门20200805</a>
+                        <a href="https://www.acfun.cn/player/ac17260168" target="_blank"
+                            class="hvr-grow-shadow">大热门20200806</a>
+                        <a href="https://www.acfun.cn/player/ac17276331" target="_blank"
+                            class="hvr-grow-shadow">大热门20200807</a>
+                        <a href="https://www.acfun.cn/player/ac17344387" target="_blank"
+                            class="hvr-grow-shadow">大热门20200811</a>
+                        <a href="https://www.acfun.cn/player/ac17363219" target="_blank"
+                            class="hvr-grow-shadow">大热门20200812</a>
+                        <a href="https://www.acfun.cn/player/ac17378801" target="_blank"
+                            class="hvr-grow-shadow">大热门20200813</a>
+                        <a href="https://www.acfun.cn/player/ac17398163" target="_blank"
+                            class="hvr-grow-shadow">大热门20200814</a>
+                        <a href="https://www.acfun.cn/player/ac17479789" target="_blank"
+                            class="hvr-grow-shadow">大热门20200818</a>
+                        <a href="https://www.acfun.cn/player/ac17496382" target="_blank"
+                            class="hvr-grow-shadow">大热门20200819</a>
+                        <a href="https://www.acfun.cn/player/ac17517695" target="_blank"
+                            class="hvr-grow-shadow">大热门20200820</a>
+                        <a href="https://www.acfun.cn/player/ac17531755" target="_blank"
+                            class="hvr-grow-shadow">大热门20200821</a>
+                        <a href="https://www.acfun.cn/player/ac17603978" target="_blank"
+                            class="hvr-grow-shadow">大热门20200825</a>
+                        <a href="https://www.acfun.cn/player/ac17615252" target="_blank"
+                            class="hvr-grow-shadow">大热门20200826</a>
+                        <a href="https://www.acfun.cn/player/ac17633457" target="_blank"
+                            class="hvr-grow-shadow">大热门20200827</a>
+                        <a href="https://www.acfun.cn/player/ac17663310" target="_blank"
+                            class="hvr-grow-shadow">大热门20200828</a>
+                        <a href="https://www.acfun.cn/player/ac17716733" target="_blank"
+                            class="hvr-grow-shadow">大热门20200901</a>
+                        <a href="https://www.acfun.cn/player/ac17741889" target="_blank"
+                            class="hvr-grow-shadow">大热门20200903</a>
+                        <a href="https://www.acfun.cn/player/ac17753681" target="_blank"
+                            class="hvr-grow-shadow">大热门20200904</a>
+                        <a href="https://www.acfun.cn/player/ac17804997" target="_blank"
+                            class="hvr-grow-shadow">大热门20200908</a>
+                        <a href="https://www.acfun.cn/player/ac17818196" target="_blank"
+                            class="hvr-grow-shadow">大热门20200909</a>
+                        <a href="https://www.acfun.cn/player/ac17830344" target="_blank"
+                            class="hvr-grow-shadow">大热门20200910</a>
+                        <a href="https://www.acfun.cn/player/ac17846262" target="_blank"
+                            class="hvr-grow-shadow">大热门20200911</a>
+                        <a href="https://www.acfun.cn/player/ac17928993" target="_blank"
+                            class="hvr-grow-shadow">大热门20200916</a>
+                        <a href="https://www.acfun.cn/player/ac17946240" target="_blank"
+                            class="hvr-grow-shadow">大热门20200917</a>
+                        <a href="https://www.acfun.cn/player/ac17971415" target="_blank"
+                            class="hvr-grow-shadow">大热门20200918</a>
+                        <a href="https://www.acfun.cn/player/ac18067660" target="_blank"
+                            class="hvr-grow-shadow">大热门20200923</a>
+                        <a href="https://www.acfun.cn/player/ac18097766" target="_blank"
+                            class="hvr-grow-shadow">大热门20200924</a>
+                        <a href="https://www.acfun.cn/player/ac18140639" target="_blank"
+                            class="hvr-grow-shadow">大热门20200925</a>
+                        <a href="https://www.acfun.cn/player/ac18231368" target="_blank"
+                            class="hvr-grow-shadow">大热门20200929</a>
+                        <a href="https://www.acfun.cn/player/ac18269729" target="_blank"
+                            class="hvr-grow-shadow">大热门20200930</a>
+                        <a href="https://www.acfun.cn/player/ac18285724" target="_blank"
+                            class="hvr-grow-shadow">大热门20201001</a>
+                        <a href="https://www.acfun.cn/player/ac18313445" target="_blank"
+                            class="hvr-grow-shadow">大热门20201002</a>
+                        <a href="https://www.acfun.cn/player/ac18423479" target="_blank"
+                            class="hvr-grow-shadow">大热门20201006</a>
+                        <a href="https://www.acfun.cn/player/ac18450239" target="_blank"
+                            class="hvr-grow-shadow">大热门20201007</a>
+                        <a href="https://www.acfun.cn/player/ac18479448" target="_blank"
+                            class="hvr-grow-shadow">大热门20201008</a>
+                        <a href="https://www.acfun.cn/player/ac18504956" target="_blank"
+                            class="hvr-grow-shadow">大热门20201009</a>
+                        <a href="https://www.acfun.cn/player/ac18625791" target="_blank"
+                            class="hvr-grow-shadow">大热门20201013</a>
+                        <a href="https://www.acfun.cn/player/ac18656706" target="_blank"
+                            class="hvr-grow-shadow">大热门20201014</a>
+                        <a href="https://www.acfun.cn/player/ac18688762" target="_blank"
+                            class="hvr-grow-shadow">大热门20201015</a>
+                        <a href="https://www.acfun.cn/player/ac18724900" target="_blank"
+                            class="hvr-grow-shadow">大热门20201016</a>
+                        <a href="https://www.acfun.cn/player/ac18841495" target="_blank"
+                            class="hvr-grow-shadow">大热门20201020</a>
+                        <a href="https://www.acfun.cn/player/ac18926590" target="_blank"
+                            class="hvr-grow-shadow">大热门20201022</a>
+                        <a href="https://www.acfun.cn/player/ac18968165" target="_blank"
+                            class="hvr-grow-shadow">大热门20201023</a>
+                        <a href="https://www.acfun.cn/player/ac19121200" target="_blank"
+                            class="hvr-grow-shadow">大热门20201027</a>
+                        <a href="https://www.acfun.cn/player/ac19151278" target="_blank"
+                            class="hvr-grow-shadow">大热门20201028</a>
+                        <a href="https://www.acfun.cn/player/ac19173631" target="_blank"
+                            class="hvr-grow-shadow">大热门20201029</a>
+                        <a href="https://www.acfun.cn/player/ac19197125" target="_blank"
+                            class="hvr-grow-shadow">大热门20201030</a>
+                        <a href="https://www.acfun.cn/player/ac19319320" target="_blank"
+                            class="hvr-grow-shadow">大热门20201103</a>
+                        <a href="https://www.acfun.cn/player/ac19344509" target="_blank"
+                            class="hvr-grow-shadow">大热门20201104</a>
+                        <a href="https://www.acfun.cn/player/ac19382359" target="_blank"
+                            class="hvr-grow-shadow">大热门20201105</a>
+                        <a href="https://www.acfun.cn/player/ac19429718" target="_blank"
+                            class="hvr-grow-shadow">大热门20201106</a>
+                        <a href="https://www.acfun.cn/player/ac19544758" target="_blank"
+                            class="hvr-grow-shadow">大热门20201110</a>
+                        <a href="https://www.acfun.cn/player/ac19575118" target="_blank"
+                            class="hvr-grow-shadow">大热门20201111</a>
+                        <a href="https://www.acfun.cn/player/ac19605991" target="_blank"
+                            class="hvr-grow-shadow">大热门20201112</a>
+                        <a href="https://www.acfun.cn/player/ac19652609" target="_blank"
+                            class="hvr-grow-shadow">大热门20201113</a>
+                        <a href="https://www.acfun.cn/player/ac19785198" target="_blank"
+                            class="hvr-grow-shadow">大热门20201117</a>
+                        <a href="https://www.acfun.cn/player/ac19851825" target="_blank"
+                            class="hvr-grow-shadow">大热门20201119</a>
+                        <a href="https://www.acfun.cn/player/ac19926540" target="_blank"
+                            class="hvr-grow-shadow">大热门20201120</a>
+                        <a href="https://www.acfun.cn/player/ac20030425" target="_blank"
+                            class="hvr-grow-shadow">大热门20201124</a>
+                        <a href="https://www.acfun.cn/player/ac20058590" target="_blank"
+                            class="hvr-grow-shadow">大热门20201125</a>
+                        <a href="https://www.acfun.cn/player/ac20087678" target="_blank"
+                            class="hvr-grow-shadow">大热门20201126</a>
+                        <a href="https://www.acfun.cn/player/ac20117932" target="_blank"
+                            class="hvr-grow-shadow">大热门20201127</a>
+                        <a href="https://www.acfun.cn/player/ac20239693" target="_blank"
+                            class="hvr-grow-shadow">大热门20201201</a>
+                        <a href="https://www.acfun.cn/player/ac20302400" target="_blank"
+                            class="hvr-grow-shadow">大热门20201203</a>
+                        <a href="https://www.acfun.cn/player/ac20335043" target="_blank"
+                            class="hvr-grow-shadow">大热门20201204</a>
+                        <a href="https://www.acfun.cn/player/ac20471923" target="_blank"
+                            class="hvr-grow-shadow">大热门20201208</a>
+                        <a href="https://www.acfun.cn/player/ac20504122" target="_blank"
+                            class="hvr-grow-shadow">大热门20201209</a>
+                        <a href="https://www.acfun.cn/player/ac20538506" target="_blank"
+                            class="hvr-grow-shadow">大热门20201210</a>
+                        <a href="https://www.acfun.cn/player/ac20573036" target="_blank"
+                            class="hvr-grow-shadow">大热门20201211</a>
+                        <a href="https://www.acfun.cn/player/ac20734912" target="_blank"
+                            class="hvr-grow-shadow">大热门20201215</a>
+                        <a href="https://www.acfun.cn/player/ac20766192" target="_blank"
+                            class="hvr-grow-shadow">大热门20201216</a>
+                        <a href="https://www.acfun.cn/player/ac20798984" target="_blank"
+                            class="hvr-grow-shadow">大热门20201217</a>
+                        <a href="https://www.acfun.cn/player/ac20832280" target="_blank"
+                            class="hvr-grow-shadow">大热门20201218</a>
+                        <a href="https://www.acfun.cn/player/ac20956998" target="_blank"
+                            class="hvr-grow-shadow">大热门20201222</a>
+                        <a href="https://www.acfun.cn/player/ac20989048" target="_blank"
+                            class="hvr-grow-shadow">大热门20201223</a>
+                        <a href="https://www.acfun.cn/player/ac21021089" target="_blank"
+                            class="hvr-grow-shadow">大热门20201224</a>
+                        <a href="https://www.acfun.cn/player/ac21052866" target="_blank"
+                            class="hvr-grow-shadow">大热门20201225</a>
+                        <a href="https://www.acfun.cn/player/ac21177596" target="_blank"
+                            class="hvr-grow-shadow">大热门20201229</a>
+                        <a href="https://www.acfun.cn/player/ac21214658" target="_blank"
+                            class="hvr-grow-shadow">大热门20201230</a>
+                        <a href="https://www.acfun.cn/player/ac21286832" target="_blank"
+                            class="hvr-grow-shadow">大热门20210101</a>
+                        <a href="https://www.acfun.cn/player/ac21441852" target="_blank"
+                            class="hvr-grow-shadow">大热门20210105</a>
+                        <a href="https://www.acfun.cn/player/ac21485478" target="_blank"
+                            class="hvr-grow-shadow">大热门20210106</a>
+                        <a href="https://www.acfun.cn/player/ac21548829" target="_blank"
+                            class="hvr-grow-shadow">大热门20210107</a>
+                        <a href="https://www.acfun.cn/player/ac21610703" target="_blank"
+                            class="hvr-grow-shadow">大热门20210108</a>
+                        <a href="https://www.acfun.cn/player/ac21865315" target="_blank"
+                            class="hvr-grow-shadow">大热门20210112</a>
+                        <a href="https://www.acfun.cn/player/ac22028613" target="_blank"
+                            class="hvr-grow-shadow">大热门20210114</a>
+                        <a href="https://www.acfun.cn/player/ac22111330" target="_blank"
+                            class="hvr-grow-shadow">大热门20210115</a>
+                        <a href="https://www.acfun.cn/player/ac22623240" target="_blank"
+                            class="hvr-grow-shadow">大热门20210121</a>
+                        <a href="https://www.acfun.cn/player/ac22720548" target="_blank"
+                            class="hvr-grow-shadow">大热门20210122</a>
+                        <a href="https://www.acfun.cn/player/ac23083466" target="_blank"
+                            class="hvr-grow-shadow">大热门20210126</a>
+                        <a href="https://www.acfun.cn/player/ac23180419" target="_blank"
+                            class="hvr-grow-shadow">大热门20210127</a>
+                        <a href="https://www.acfun.cn/player/ac23274618" target="_blank"
+                            class="hvr-grow-shadow">大热门20210128</a>
+                        <a href="https://www.acfun.cn/player/ac23368272" target="_blank"
+                            class="hvr-grow-shadow">大热门20210129</a>
+                        <a href="https://www.acfun.cn/player/ac23733331" target="_blank"
+                            class="hvr-grow-shadow">大热门20210202</a>
+                        <a href="https://www.acfun.cn/player/ac24006002" target="_blank"
+                            class="hvr-grow-shadow">大热门20210205</a>
+                        <a href="https://www.acfun.cn/player/ac24374772" target="_blank"
+                            class="hvr-grow-shadow">大热门20210209</a>
+                        <a href="https://www.acfun.cn/player/ac24689082" target="_blank"
+                            class="hvr-grow-shadow">大热门20210212</a>
+                        <a href="https://www.acfun.cn/player/ac25011783" target="_blank"
+                            class="hvr-grow-shadow">大热门20210216</a>
+                        <a href="https://www.acfun.cn/player/ac25282709" target="_blank"
+                            class="hvr-grow-shadow">大热门20210219</a>
+                        <a href="https://www.acfun.cn/player/ac25667638" target="_blank"
+                            class="hvr-grow-shadow">大热门20210223</a>
+                        <a href="https://www.acfun.cn/player/ac25767831" target="_blank"
+                            class="hvr-grow-shadow">大热门20210224</a>
+                        <a href="https://www.acfun.cn/player/ac25862709" target="_blank"
+                            class="hvr-grow-shadow">大热门20210225</a>
+                        <a href="https://www.acfun.cn/player/ac26177631" target="_blank"
+                            class="hvr-grow-shadow">大热门20210302</a>
+                        <a href="https://www.acfun.cn/player/ac26238870" target="_blank"
+                            class="hvr-grow-shadow">大热门20210303</a>
+                        <a href="https://www.acfun.cn/player/ac26300697" target="_blank"
+                            class="hvr-grow-shadow">大热门20210304</a>
+                        <a href="https://www.acfun.cn/player/ac26349213" target="_blank"
+                            class="hvr-grow-shadow">大热门20210305</a>
+                        <a href="https://www.acfun.cn/player/ac26483234" target="_blank"
+                            class="hvr-grow-shadow">大热门20210309</a>
+                        <a href="https://www.acfun.cn/player/ac26557778" target="_blank"
+                            class="hvr-grow-shadow">大热门20210310</a>
+                        <a href="https://www.acfun.cn/player/ac26631640" target="_blank"
+                            class="hvr-grow-shadow">大热门20210311</a>
+                        <a href="https://www.acfun.cn/player/ac26695761" target="_blank"
+                            class="hvr-grow-shadow">大热门20210312</a>
+                        <a href="https://www.acfun.cn/player/ac26910352" target="_blank"
+                            class="hvr-grow-shadow">大热门20210316</a>
+                        <a href="https://www.acfun.cn/player/ac26949927" target="_blank"
+                            class="hvr-grow-shadow">大热门20210317</a>
+                        <a href="https://www.acfun.cn/player/ac26980603" target="_blank"
+                            class="hvr-grow-shadow">大热门20210318</a>
+                        <a href="https://www.acfun.cn/player/ac27007832" target="_blank"
+                            class="hvr-grow-shadow">大热门20210319</a>
+                        <a href="https://www.acfun.cn/player/ac27119086" target="_blank"
+                            class="hvr-grow-shadow">大热门20210323</a>
+                        <a href="https://www.acfun.cn/player/ac27151511" target="_blank"
+                            class="hvr-grow-shadow">大热门20210324</a>
+                        <a href="https://www.acfun.cn/player/ac27180558" target="_blank"
+                            class="hvr-grow-shadow">大热门20210325</a>
+                        <a href="https://www.acfun.cn/player/ac27218144" target="_blank"
+                            class="hvr-grow-shadow">大热门20210326</a>
+                        <a href="https://www.acfun.cn/player/ac27328564" target="_blank"
+                            class="hvr-grow-shadow">大热门20210330</a>
+                        <a href="https://www.acfun.cn/player/ac27362557" target="_blank"
+                            class="hvr-grow-shadow">大热门20210331</a>
+                        <a href="https://www.acfun.cn/player/ac27414770" target="_blank"
+                            class="hvr-grow-shadow">大热门20210401</a>
+                        <a href="https://www.acfun.cn/player/ac27434671" target="_blank"
+                            class="hvr-grow-shadow">大热门20210402</a>
+                        <a href="https://www.acfun.cn/player/ac27515611" target="_blank"
+                            class="hvr-grow-shadow">大热门20210406</a>
+                        <a href="https://www.acfun.cn/player/ac27549257" target="_blank"
+                            class="hvr-grow-shadow">大热门20210407</a>
+                        <a href="https://www.acfun.cn/player/ac27574975" target="_blank"
+                            class="hvr-grow-shadow">大热门20210408</a>
+                        <a href="https://www.acfun.cn/player/ac27605583" target="_blank"
+                            class="hvr-grow-shadow">大热门20210409</a>
+                        <a href="https://www.acfun.cn/player/ac27707452" target="_blank"
+                            class="hvr-grow-shadow">大热门20210413</a>
+                        <a href="https://www.acfun.cn/player/ac27737077" target="_blank"
+                            class="hvr-grow-shadow">大热门20210414</a>
+                        <a href="https://www.acfun.cn/player/ac27773593" target="_blank"
+                            class="hvr-grow-shadow">大热门20210415</a>
+                        <a href="https://www.acfun.cn/player/ac27839792" target="_blank"
+                            class="hvr-grow-shadow">大热门20210416</a>
+                        <a href="https://www.acfun.cn/player/ac28052720" target="_blank"
+                            class="hvr-grow-shadow">大热门20210421</a>
+                        <a href="https://www.acfun.cn/player/ac28123926" target="_blank"
+                            class="hvr-grow-shadow">大热门20210423</a>
+                        <a href="https://www.acfun.cn/player/ac28309549" target="_blank"
+                            class="hvr-grow-shadow">大热门20210427</a>
+                        <a href="https://www.acfun.cn/player/ac28338990" target="_blank"
+                            class="hvr-grow-shadow">大热门20210428</a>
+                        <a href="https://www.acfun.cn/player/ac28374600" target="_blank"
+                            class="hvr-grow-shadow">大热门20210429</a>
+                        <a href="https://www.acfun.cn/player/ac28401998" target="_blank"
+                            class="hvr-grow-shadow">大热门20210430</a>
+                        <a href="https://www.acfun.cn/player/ac28489594" target="_blank"
+                            class="hvr-grow-shadow">大热门20210504</a>
+                        <a href="https://www.acfun.cn/player/ac28500007" target="_blank"
+                            class="hvr-grow-shadow">大热门20210505</a>
+                        <a href="https://www.acfun.cn/player/ac28520904" target="_blank"
+                            class="hvr-grow-shadow">大热门20210506</a>
+                        <a href="https://www.acfun.cn/player/ac28544215" target="_blank"
+                            class="hvr-grow-shadow">大热门20210507</a>
+                        <a href="https://www.acfun.cn/player/ac28655878" target="_blank"
+                            class="hvr-grow-shadow">大热门20210511</a>
+                        <a href="https://www.acfun.cn/player/ac28723896" target="_blank"
+                            class="hvr-grow-shadow">大热门20210513</a>
+                        <a href="https://www.acfun.cn/player/ac28950551" target="_blank"
+                            class="hvr-grow-shadow">大热门20210518</a>
+                        <a href="https://www.acfun.cn/player/ac28982860" target="_blank"
+                            class="hvr-grow-shadow">大热门20210519</a>
+                        <a href="https://www.acfun.cn/player/ac29061491" target="_blank"
+                            class="hvr-grow-shadow">大热门20210521</a>
+                        <a href="https://www.acfun.cn/player/ac29146817" target="_blank"
+                            class="hvr-grow-shadow">大热门20210525</a>
+                        <a href="https://www.acfun.cn/player/ac29179733" target="_blank"
+                            class="hvr-grow-shadow">大热门20210526</a>
+                        <a href="https://www.acfun.cn/player/ac29216246" target="_blank"
+                            class="hvr-grow-shadow">大热门20210527</a>
+                        <a href="https://www.acfun.cn/player/ac29275739" target="_blank"
+                            class="hvr-grow-shadow">大热门20210528</a>
+                        <a href="https://www.acfun.cn/player/ac29439631" target="_blank"
+                            class="hvr-grow-shadow">大热门20210603</a>
+                        <a href="https://www.acfun.cn/player/ac29448746" target="_blank"
+                            class="hvr-grow-shadow">大热门20210604</a>
+                        <a href="https://www.acfun.cn/player/ac29562892" target="_blank"
+                            class="hvr-grow-shadow">大热门20210608</a>
+                        <a href="https://www.acfun.cn/player/ac29625317" target="_blank"
+                            class="hvr-grow-shadow">大热门20210609</a>
+                        <a href="https://www.acfun.cn/player/ac29676796" target="_blank"
+                            class="hvr-grow-shadow">大热门20210611</a>
+                        <a href="https://www.acfun.cn/player/ac29796079" target="_blank"
+                            class="hvr-grow-shadow">大热门20210616</a>
+                        <a href="https://www.acfun.cn/player/ac29823759" target="_blank"
+                            class="hvr-grow-shadow">大热门20210617</a>
+                        <a href="https://www.acfun.cn/player/ac29955302" target="_blank"
+                            class="hvr-grow-shadow">大热门20210623</a>
+                        <a href="https://www.acfun.cn/player/ac30110368" target="_blank"
+                            class="hvr-grow-shadow">大热门20210630</a>
+                        <a href="https://www.acfun.cn/player/ac30173240" target="_blank"
+                            class="hvr-grow-shadow">大热门20210706</a>
+                    </div>
+                </section>
+                <section class="scroll">
+                    <div id="effects" class="effects">
+                        <a href="https://www.acfun.cn/player/ac33321977" target="_blank" title="来源A站"
+                            class="hvr-grow-shadow">大热门20220125</a>
+                        <a href="https://www.acfun.cn/player/ac33353208" target="_blank" title="来源A站"
+                            class="hvr-grow-shadow">大热门20220126</a>
+                        <a href="https://www.acfun.cn/player/ac33386067" target="_blank" title="来源A站"
+                            class="hvr-grow-shadow">大热门20220127</a>
+                        <a href="https://www.acfun.cn/player/ac33535664" target="_blank" title="来源A站"
+                            class="hvr-grow-shadow">大热门20220208</a>
+                        <a href="https://www.acfun.cn/player/ac33549294" target="_blank" title="来源A站"
+                            class="hvr-grow-shadow">大热门20220209</a>
+                    </div>
+                </section>
+                <section class="scroll">
+                    <div id="effects" class="effects">
+                        <a href="http://www.bilibili.com/video/av27261024" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20130910</a>
+                        <a href="http://www.bilibili.com/video/av7342706" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20131119</a>
+                        <a href="http://www.bilibili.com/video/av77598360" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20131226</a>
+                        <a href="http://www.bilibili.com/video/av26499443" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20140725</a>
+                        <a href="http://www.bilibili.com/video/av851462523" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20150330</a>
+                        <a href="http://www.bilibili.com/video/av90193314" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20151112</a>
+                        <a href="http://www.bilibili.com/video/av90042302" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20151224</a>
+                        <a href="http://www.bilibili.com/video/av90077190" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20160202</a>
+                        <a href="http://www.bilibili.com/video/av541266282" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20160323</a>
+                        <a href="http://www.bilibili.com/video/av9025538" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20160407</a>
+                        <a href="http://www.bilibili.com/video/av94029267" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20160413</a>
+                        <a href="http://www.bilibili.com/video/av668213856" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20160509</a>
+                        <a href="http://www.bilibili.com/video/av26489076" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20160722</a>
+                        <a href="http://www.bilibili.com/video/av6566436" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20161005</a>
+                        <a href="http://www.bilibili.com/video/av711427553" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20161109</a>
+                        <a href="http://www.bilibili.com/video/av48862835" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20161117</a>
+                        <a href="http://www.bilibili.com/video/av7551052" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20161215</a>
+                        <a href="http://www.bilibili.com/video/av8008292" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20170112</a>
+                        <a href="http://www.bilibili.com/video/av8065111" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20170116</a>
+                        <a href="http://www.bilibili.com/video/av8112107" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20170119</a>
+                        <a href="http://www.bilibili.com/video/av8174778" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20170120</a>
+                        <a href="http://www.bilibili.com/video/av8197639" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20170123</a>
+                        <a href="http://www.bilibili.com/video/av8242284" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20170126</a>
+                        <a href="http://www.bilibili.com/video/av8555002" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20170203</a>
+                        <a href="http://www.bilibili.com/video/av8624964" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20170214</a>
+                        <a href="http://www.bilibili.com/video/av8741528" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20170220</a>
+                        <a href="http://www.bilibili.com/video/av8805985" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20170223</a>
+                        <a href="http://www.bilibili.com/video/av8902895" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20170228</a>
+                        <a href="http://www.bilibili.com/video/av9040590" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20170307</a>
+                        <a href="http://www.bilibili.com/video/av9073869" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20170309</a>
+                        <a href="http://www.bilibili.com/video/av9209280" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20170316</a>
+                        <a href="http://www.bilibili.com/video/av291379357" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20170501</a>
+                        <a href="http://www.bilibili.com/video/av10808593" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20170523</a>
+                        <a href="http://www.bilibili.com/video/av715199842" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20170614</a>
+                        <a href="http://www.bilibili.com/video/av16553160" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20171121</a>
+                        <a href="http://www.bilibili.com/video/av714796867" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20171127</a>
+                        <a href="http://www.bilibili.com/video/av17469022" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20171205</a>
+                        <a href="http://www.bilibili.com/video/av17495892" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20171220</a>
+                        <a href="http://www.bilibili.com/video/av17472373" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20171220</a>
+                        <a href="http://www.bilibili.com/video/av587255018" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20180205</a>
+                        <a href="http://www.bilibili.com/video/av286264547" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20180226</a>
+                        <a href="http://www.bilibili.com/video/av24914077" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20180612</a>
+                        <a href="http://www.bilibili.com/video/av288955864" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20180621</a>
+                        <a href="http://www.bilibili.com/video/av883920631" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20180809</a>
+                        <a href="http://www.bilibili.com/video/av796441426" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20180912</a>
+                        <a href="http://www.bilibili.com/video/av456463145" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20180913</a>
+                        <a href="http://www.bilibili.com/video/av40305397" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20190108</a>
+                        <a href="http://www.bilibili.com/video/av43931236" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20190213</a>
+                        <a href="http://www.bilibili.com/video/av47393300" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20190325</a>
+                        <a href="http://www.bilibili.com/video/av48042005" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20190401</a>
+                        <a href="http://www.bilibili.com/video/av48224945" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20190403</a>
+                        <a href="http://www.bilibili.com/video/av59774302" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20190717</a>
+                        <a href="http://www.bilibili.com/video/av67828539" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20190905</a>
+                        <a href="http://www.bilibili.com/video/av67806837" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20190911</a>
+                        <a href="http://www.bilibili.com/video/av67680186" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20190912</a>
+                        <a href="http://www.bilibili.com/video/av68035228" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20190916</a>
+                        <a href="http://www.bilibili.com/video/av722251547" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20190917</a>
+                        <a href="http://www.bilibili.com/video/av242548950" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20191216</a>
+                        <a href="http://www.bilibili.com/video/av925002787" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200128</a>
+                        <a href="http://www.bilibili.com/video/av243779054" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200210</a>
+                        <a href="http://www.bilibili.com/video/av245672369" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200218</a>
+                        <a href="http://www.bilibili.com/video/av92947091" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200227</a>
+                        <a href="http://www.bilibili.com/video/av93729157" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200303</a>
+                        <a href="http://www.bilibili.com/video/av95011058" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200304</a>
+                        <a href="http://www.bilibili.com/video/av96140414" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200313</a>
+                        <a href="http://www.bilibili.com/video/av97622824" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200318</a>
+                        <a href="http://www.bilibili.com/video/av710151934" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200403</a>
+                        <a href="http://www.bilibili.com/video/av285479747" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200416</a>
+                        <a href="http://www.bilibili.com/video/av667870847" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200421</a>
+                        <a href="http://www.bilibili.com/video/av497977229" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200423</a>
+                        <a href="http://www.bilibili.com/video/av243163760" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200512</a>
+                        <a href="http://www.bilibili.com/video/av455726040" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200514</a>
+                        <a href="http://www.bilibili.com/video/av668793018" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200619</a>
+                        <a href="http://www.bilibili.com/video/av287525996" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200701</a>
+                        <a href="http://www.bilibili.com/video/av883853929" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200709</a>
+                        <a href="http://www.bilibili.com/video/av801623810" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200709</a>
+                        <a href="http://www.bilibili.com/video/av796302486" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200710</a>
+                        <a href="http://www.bilibili.com/video/av459084580" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200717</a>
+                        <a href="http://www.bilibili.com/video/av928998115" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200807</a>
+                        <a href="http://www.bilibili.com/video/av330847235" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200807</a>
+                        <a href="http://www.bilibili.com/video/av371650197" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200811</a>
+                        <a href="http://www.bilibili.com/video/av245780585" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200814</a>
+                        <a href="http://www.bilibili.com/video/av203940911" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200815</a>
+                        <a href="http://www.bilibili.com/video/av416379349" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200819</a>
+                        <a href="http://www.bilibili.com/video/av457119274" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200911</a>
+                        <a href="http://www.bilibili.com/video/av928888899" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200925</a>
+                        <a href="http://www.bilibili.com/video/av287201761" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200925</a>
+                        <a href="http://www.bilibili.com/video/av839823820" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20200925</a>
+                        <a href="http://www.bilibili.com/video/av458879319" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20201002</a>
+                        <a href="http://www.bilibili.com/video/av415150010" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20201028</a>
+                        <a href="http://www.bilibili.com/video/av501410381" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20201030</a>
+                        <a href="http://www.bilibili.com/video/av415168456" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20201030</a>
+                        <a href="http://www.bilibili.com/video/av288915388" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20201106</a>
+                        <a href="http://www.bilibili.com/video/av372625462" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20201106</a>
+                        <a href="http://www.bilibili.com/video/av800280515" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20201113</a>
+                        <a href="http://www.bilibili.com/video/av415338770" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20201120</a>
+                        <a href="http://www.bilibili.com/video/av842979657" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20201127</a>
+                        <a href="http://www.bilibili.com/video/av970518326" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20201204</a>
+                        <a href="http://www.bilibili.com/video/av500621336" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20201211</a>
+                        <a href="http://www.bilibili.com/video/av970705059" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20201218</a>
+                        <a href="http://www.bilibili.com/video/av373936159" target="_blank"  title="来源B站"
+                            class="hvr-grow-shadow">综艺大热门20201229</a>
+                    </div>
+                </section>
+            </main>
+            <main>
+                <div>
+                    <input id="tab5" type="radio" name="tabs">
+                    <label for="tab5">韩综</label>
+                    <input id="tab6" type="radio" name="tabs">
+                    <label for="tab6">中国综艺</label>
+                    <input id="tab7" type="radio" name="tabs">
+                    <label for="tab7">电视剧</label>
+                    <input id="tab8" type="radio" name="tabs">
+                    <label for="tab8">综艺节目2</label>
+                </div>
+                <section class="scroll">
+                    <div id="effects" class="effects">
+                        <a href="https://www.ixigua.com/6808373813294662148" target="_blank" title="来自西瓜视频 UP主：啾一口流心芝士"
+                            class="hvr-grow-shadow">无限挑战全集</a>
+                        <a href="https://www.bilibili.com/video/BV1n7411c7Gf" target="_blank" title="来自B站 UP主：啾一口流心芝士"
+                            class="hvr-grow-shadow">Running Man全集</a>
+                        <a href="https://www.bilibili.com/video/BV1qA411H7sh" target="_blank" title="来自B站 UP主：账号已注销"
+                            class="hvr-grow-shadow">Running Man全集</a>
+                        <a href="https://www.bilibili.com/video/BV1NJ411x7WY" target="_blank" title="来自B站 UP主：努力自律的1900"
+                            class="hvr-grow-shadow">Running Man2017</a>
+                        <a href="https://www.bilibili.com/video/BV1Gf4y1U7ZM" target="_blank" title="来自B站 UP主：RM_陆陆"
+                            class="hvr-grow-shadow">Running Man2011</a>
+                        <a href="https://www.bilibili.com/video/BV134411u7dj" target="_blank"
+                            title="来自B站 UP主：丶Bittersweet 集数278" class="hvr-grow-shadow">Running Man11-19</a>
+                        <a href="https://www.bilibili.com/video/BV137411L7uH" target="_blank"
+                            title="来自B站 UP主：糖宝大女王 集数126" class="hvr-grow-shadow">Running Man10-12</a>
+                        <a href="https://www.ixigua.com/7007391375306162695" target="_blank" title="来源：西瓜视频 UP主：啾一口流心芝士"
+                            class="hvr-grow-shadow">闲着干嘛呢</a>
+                    </div>
+                </section>
+                <section class="scroll">
+                    <div id="effects" class="effects">
+                        <a href="https://www.ixigua.com/6822479540137230852" target="_blank"
+                            title="来源：西瓜视频 UP主：我爱康熙 集数 728" class="hvr-grow-shadow">我爱康熙合集</a>
+                        <a href="http://www.zjstv.com/zcloud/video/8657974.html" target="_blank"
+                            title="来源：浙江卫视" class="hvr-grow-shadow">奔跑吧9</a>
+                        <a href="http://tv.cztv.com/vplay/1001052.html" target="_blank"
+                            title="来源：浙江卫视" class="hvr-grow-shadow">奔跑吧9</a>
+                        <a href="http://tv.cztv.com/vplay/86952.html" target="_blank"
+                            title="来源：浙江卫视" class="hvr-grow-shadow">奔跑吧兄弟第一季--第七季</a>
+                        <a href="http://tv.cztv.com/vplay/650354.html" target="_blank"
+                            title="来源：浙江卫视" class="hvr-grow-shadow">青春环游记第一季</a>
+                        <a href="http://tv.cztv.com/vplay/831946.html" target="_blank"
+                            title="来源：浙江卫视" class="hvr-grow-shadow">青春环游记第二季</a>
+                        <a href="http://tv.cztv.com/vplay/1096957.html" target="_blank"
+                            title="来源：浙江卫视" class="hvr-grow-shadow">青春环游记第三季</a>
+                        <a href="http://tv.cztv.com/vplay/327426.html" target="_blank"
+                            title="来源：浙江卫视" class="hvr-grow-shadow">高能少年团第一季</a>
+                        <a href="http://tv.cztv.com/vplay/502431.html" target="_blank"
+                            title="来源：浙江卫视" class="hvr-grow-shadow">高能少年团第一季</a>
+                    </div>
+                </section>
+                <section class="scroll">
+                    <div id="effects" class="effects">
+                        <a href="http://tv.cztv.com/tv" target="_blank" title="来源：浙江卫视"
+                            class="hvr-grow-shadow">浙江卫视电视剧</a>
+                    </div>
+                </section>
+                <section class="scroll">
+                    <div id="effects" class="effects">
+                        <a href="https://www.sassmeister.com/" target="_blank" class="hvr-grow-shadow"
+                            title="Sass在线编辑器 https://gitee.com/qlzhu_981/SassMeister">sassmeister</a>
+                        <a href="https://www.sass.hk/css2sass/" target="_blank" class="hvr-grow-shadow">CSS转Sass
+                            Sass转换器</a>
+                        <a href="https://mp.weixin.qq.com/s/JAOZ-NZoPnmAhL-9l0WKKQ" target="_blank"
+                            class="hvr-grow-shadow">CSS 奇思妙想边框动画</a>
+                        <a href="https://www.acfun.cn/player/ac33535664" target="_blank"
+                            class="hvr-grow-shadow">大热门20220208</a>
+                        <a href="https://www.acfun.cn/player/ac33549294" target="_blank"
+                            class="hvr-grow-shadow">大热门20220209</a>
+                    </div>
+                </section>
+            </main>
+            <main>
+                <div>
+                    <input id="tab9" type="radio" name="tabs">
+                    <label for="tab9">网络电视</label>
+                    <input id="tab10" type="radio" name="tabs">
+                    <label for="tab10">影视 2</label>
+                    <input id="tab11" type="radio" name="tabs">
+                    <label for="tab11">影视 3</label>
+                    <input id="tab12" type="radio" name="tabs">
+                    <label for="tab12">影视 4</label>
+                </div>
+                <section class="scroll">
+                    <div id="effects" class="effects">
+                        <a href="https://tv.cctv.com/live/" target="_blank" class="hvr-grow-shadow">CCTV 直播大全</a>
+                        <a href="https://tv.cctv.com/" target="_blank" class="hvr-grow-shadow">CCTV 官网</a>
+                        <a href="https://www.brtn.cn/btv/btvsy_index" target="_blank"
+                            class="hvr-grow-shadow">北京网络广播电视台</a>
+                        <a href="http://www.zjstv.com/" target="_blank" class="hvr-grow-shadow">浙江卫视,中国蓝</a>
+                        <a href="http://live.jstv.com/" target="_blank" class="hvr-grow-shadow">江苏卫视在线观看</a>
+                        <a href="http://live.mgtv.com/" target="_blank" class="hvr-grow-shadow">芒果TV直播频道</a>
+                        <a href="https://live.kankanews.com/huikan/" target="_blank"
+                            class="hvr-grow-shadow">东方卫视新闻直播频道</a>
+                        <a href="http://v.iqilu.com/" target="_blank" class="hvr-grow-shadow">山东卫视在线直播</a>
+                        <a href="https://www.hntv.tv/" target="_blank" class="hvr-grow-shadow">河南广播电视台官方网络电视台平台</a>
+                        <a href="https://www.hljtv.com/live/" target="_blank"
+                            class="hvr-grow-shadow">电视直播_黑龙江网络广播电视台</a>
+                        <a href="https://www.gdtv.cn/tvChannelDetail/43" target="_blank"
+                            class="hvr-grow-shadow">广东卫视</a>
+                        <a href="http://www.setv.fjtv.net/live/" target="_blank" class="hvr-grow-shadow">直播_东南卫视</a>
+                        <a href="http://www.ahtv.cn/" target="_blank" class="hvr-grow-shadow">安徽网络广播电视台</a>
+                        <a href="http://www.sctv.com/live/" target="_blank" class="hvr-grow-shadow">四川卫视</a>
+                        <a href="http://www.jxntv.cn/live/#/" target="_blank" class="hvr-grow-shadow">在线直播-江西网络广播电视台</a>
+                        <a href="https://www.sztv.com.cn/index.shtml" target="_blank"
+                            class="hvr-grow-shadow">壹深圳-深圳广播电影电视</a>
+                        <a href="https://www.cbg.cn/" target="_blank" class="hvr-grow-shadow">视界网—重庆网络广播电视台</a>
+                        <a href="https://www.gzstv.com/tv/ch01" target="_blank" class="hvr-grow-shadow">贵州卫视</a>
+                        <a href="http://live.snrtv.com/star" target="_blank" class="hvr-grow-shadow">陕西网络广播电视台直播</a>
+                        <a href="http://www.hebtv.com/pc/wlzb" target="_blank" class="hvr-grow-shadow">直播-河北网络广播电视台</a>
+                        <a href="http://tc.hnntv.cn/" target="_blank" class="hvr-grow-shadow">海南卫视</a>
+                        <a href="http://www.rzw.com.cn/" target="_blank" class="hvr-grow-shadow">山东日照网</a>
+                        <a href="http://www.fjtv.net/" target="_blank" class="hvr-grow-shadow">福建电视台</a>
+                        <a target="_blank" href="http://www.cntv.cn/" class="hvr-grow-shadow">中国网络电视台</a>
+                        <a target="_blank" href="http://www.sxtvs.com/" class="hvr-grow-shadow">陕西电视台</a>
+                        <a target="_blank" href="http://www.tjtv.com.cn/" class="hvr-grow-shadow">天津电视台</a>
+                        <a target="_blank" href="http://www.hunantv.com/" class="hvr-grow-shadow">湖南电视台</a>
+                        <a target="_blank" href="http://www.cq.xinhuanet.com/" class="hvr-grow-shadow">新华网重庆频道</a>
+                        <a target="_blank" href="http://www.bluehn.com/" class="hvr-grow-shadow">海南电视台</a>
+                        <a target="_blank" href="http://www.yntv.cn/" class="hvr-grow-shadow">云南电视台</a>
+                        <a target="_blank" href="http://www.legaldaily.com.cn/" class="hvr-grow-shadow">法制网</a>
+                        <a target="_blank" href="http://www.hbtv.com.cn/" class="hvr-grow-shadow">湖北网络广播电视台</a>
+                        <a target="_blank" href="http://www.gstv.com.cn/" class="hvr-grow-shadow">甘肃电视台</a>
+                        <a target="_blank" href="http://www.nxtv.com.cn/" class="hvr-grow-shadow">宁夏电视台</a>
+                        <a target="_blank" href="http://www.gxtv.cn/" class="hvr-grow-shadow">广西电视台</a>
+                        <a target="_blank" href="http://www.xmtv.cn/" class="hvr-grow-shadow">台海网络电视台</a>
+                        <a target="_blank" href="http://www.qtv.com.cn/" class="hvr-grow-shadow">青岛网络电视台</a>
+                        <a target="_blank" href="http://www.nmtv.cn/" class="hvr-grow-shadow">内蒙古电视台</a>
+                        <a target="_blank" href="http://www.xjtvs.com.cn/" class="hvr-grow-shadow">新疆网络广播电视台</a>
+                        <a target="_blank" href="http://www.jilintv.cn/" class="hvr-grow-shadow">吉林电视台</a>
+                        <a target="_blank" href="http://www.qtv.com.cn/live/tv/index.shtml" class="hvr-grow-shadow">直播-青岛网络电视台</a>
+                    </div>
+                </section>
+                <section class="scroll">
+                    <div id="effects" class="effects">
+                        <a href="http://tv.cztv.com/movie" target="_blank"
+                            class="hvr-grow-shadow">浙江卫视电影</a>
+                    </div>
+                </section>
+                <section class="scroll">
+                    <div id="effects" class="effects">
+                        <a href="https://www.acfun.cn/player/ac33321977" target="_blank"
+                            class="hvr-grow-shadow">大热门20220125</a>
+                    </div>
+                </section>
+                <section class="scroll">
+                    <div id="effects" class="effects">
+                        <a href="https://www.sassmeister.com/" target="_blank" class="hvr-grow-shadow">sassmeister</a>
+                        <a href="https://www.sass.hk/css2sass/" target="_blank" class="hvr-grow-shadow">CSS转Sass
+                            Sass转换器</a>
+                        <a href="https://mp.weixin.qq.com/s/JAOZ-NZoPnmAhL-9l0WKKQ" target="_blank"
+                            class="hvr-grow-shadow">CSS 奇思妙想边框动画</a>
+                    </div>
+                </section>
+            </main>
+            <main>
+                <div>
+                    <!-- https://www.zhihu.com/question/38836382  -->
+                    <input id="tab13" type="radio" name="tabs">
+                    <label for="tab13">开源书籍</label>
+                    <input id="tab14" type="radio" name="tabs">
+                    <label for="tab14">网站收藏</label>
+                    <input id="tab15" type="radio" name="tabs">
+                    <label for="tab15">工具网站</label>
+                    <input id="tab16" type="radio" name="tabs">
+                    <label for="tab16">技术文章</label>
+                    <input id="tab17" type="radio" name="tabs">
+                    <label for="tab17">Linux Github</label>
+                </div>
+				<!-- 开源书籍 -->
+                <section class="scroll">
+                    <div id="effects" class="effects">
+                        <a href="https://thescala.github.io/Java-Platform-Standard-Edition-8-API-Specification/"
+                            target="_blank" title="JDK 8 API 翻译文档" class="hvr-grow-shadow">Java™ Platform, Standard
+                            Edition 8 API Specification</a>
+                        <a href="https://blog.yuqiyu.com/books/microservice-design-to-deployment/" target="_blank"
+                            class="hvr-grow-shadow">微服务：从设计到部署</a>
+                        <a href="https://blog.yuqiyu.com/books/springboot1.5.9/index.html" target="_blank"
+                            class="hvr-grow-shadow">Spring Boot 中文文档</a>
+                        <a href="https://blog.yuqiyu.com/books/nginx/index.html" target="_blank"
+                            class="hvr-grow-shadow">Nginx 中文文档</a>
+                        <a href="http://redisbook.com/" target="_blank"  class="hvr-grow-shadow">Redis 设计与实现</a>
+                        <a href="https://deerchao.cn/tutorials/regex/regex.htm" target="_blank"  class="hvr-grow-shadow">正则表达式30分钟入门教程</a>
+                        <a href="http://tengine.taobao.org/book/index.html" target="_blank" title="来源：淘宝团队"
+                            class="hvr-grow-shadow">Nginx开发从入门到精通</a>
+                        <a href="http://ts.yayujs.com/learn-typescript/" target="_blank"
+                            class="hvr-grow-shadow">TypeScript4 中文文档</a>
+                        <a href="http://css.doyoe.com/" target="_blank"
+                            class="hvr-grow-shadow">CSS参考手册</a>
+                    </div>
+                </section>
+				<!-- 网站收藏 -->
+                <section class="scroll">
+                    <div id="effects" class="effects">
+                        <a href="https://howtodoinjava.com/" target="_blank" title="Java Tutorials"
+                            class="hvr-grow-shadow">Java Tutorials</a>
+                        <a href="https://www.githubs.cn/" target="_blank" title="Github 中文社区"
+                            class="hvr-grow-shadow">Github 中文社区</a>
+                        <a href="https://www.redis.com.cn/" target="_blank" title="Redis开发与运维技术、Redis教程、使用手册"
+                            class="hvr-grow-shadow">Redis中文网</a>
+                        <a href="https://www.docs4dev.com/amp/" target="_blank"
+                            title="Java8 Tutorials、Shiro、Spring Boot、Spring Cloud、ZooKeeper等文档 "
+                            class="hvr-grow-shadow">Docs4dev </a>
+                    </div>
+                </section>
+                <!-- 工具网站 -->
+				<section class="scroll">
+                    <div id="effects" class="effects">
+                        <a href="https://www.sassmeister.com/" target="_blank" class="hvr-grow-shadow"
+                            title="Sass在线编辑器 https://gitee.com/qlzhu_981/SassMeister">sassmeister</a>
+                        <a href="https://www.sass.hk/css2sass/" target="_blank" class="hvr-grow-shadow">CSS转Sass
+                            Sass转换器</a>
+                        <a href="https://oktools.net/json" target="_blank" class="hvr-grow-shadow">JSON格式化</a>
+                    </div>
+                </section>
+                <!-- 技术文章 -->
+				<section class="scroll">
+                    <div id="effects" class="effects">
+                            <a href="https://mp.weixin.qq.com/s/JAOZ-NZoPnmAhL-9l0WKKQ" target="_blank"
+                                class="hvr-grow-shadow">CSS 奇思妙想边框动画</a>
+                            <a href="https://github.com/chokcoco/iCSS" target="_blank"
+                                class="hvr-grow-shadow">CSS/Web动画</a>
+                        </div>
+                </section>
+				<!-- Linux Github -->
+				<section class="scroll">
+                    <div id="effects" class="effects">
+						<a href="https://jaywcjlove.github.io/linux-command" target="_blank" title="https://hub.連接.台灣/jaywcjlove/linux-command"
+							class="hvr-grow-shadow">Linux命令大全搜索工具</a>
+						<a href="http://billie66.github.io/TLCL" target="_blank" title="https://hub.連接.台灣/billie66/TLCL"
+							class="hvr-grow-shadow">快乐的 Linux 命令行</a>
+						<a href="https://dunwu.github.io/linux-tutorial/" target="_blank" title="https://github.com/dunwu/linux-tutorial"
+					class="hvr-grow-shadow"> LINUX-TUTORIAL</a>
+						<a href="https://hub.連接.台灣/guodongxiaren/LinuxTool" target="_blank" title="https://hub.連接.台灣/guodongxiaren/LinuxTool"
+					class="hvr-grow-shadow">Linux下常用工具、命令介绍</a>
+						<a href="https://hub.連接.台灣/fengyuhetao/shell" target="_blank" title="https://hub.連接.台灣/fengyuhetao/shell"
+					class="hvr-grow-shadow">Linux命令行与shell脚本编程大全案例</a>
+						<a href="https://hub.連接.台灣/opensourceteams/linux" target="_blank" title="https://hub.連接.台灣/opensourceteams/linux"
+					class="hvr-grow-shadow">nginx日志统计分析自动报表工具goaccess</a>
+						<a href="https://tldr.linux.cn/" target="_blank" title="https://hub.連接.台灣/LCTT/tldr.linux.cn"
+					class="hvr-grow-shadow">Linux 命令快速查询</a>	
+					<a href="https://estavel.github.io/simulationLinuxIndex/index.html" target="_blank" title="https://hub.連接.台灣/wangqingkai/simulationLinuxIndex"
+					class="hvr-grow-shadow">仿Linux命令网站首页</a>
+						<a href="https://archlinuxstudio.github.io/ShellTutorial/#/" target="_blank" title="https://hub.連接.台灣/ArchLinuxStudio/ShellTutorial"
+					class="hvr-grow-shadow">Linux命令行与Shell脚本教程</a>
+					
+					<a href="https://hub.連接.台灣/zhangyouliang/linuxlearn" target="_blank" title="https://hub.連接.台灣/zhangyouliang/linuxlearn"
+					class="hvr-grow-shadow">日常运维常用笔记总结</a>
+					<a href="https://philipding.github.io/linux" target="_blank" title="https://hub.連接.台灣/PhilipDing/linux"
+					class="hvr-grow-shadow">Linux命令大全搜索工具</a>
+					<a href="https://hub.連接.台灣/YunKillerE/linux_system_shell" target="_blank" title="https://hub.連接.台灣/YunKillerE/linux_system_shell"
+					class="hvr-grow-shadow">其他一些脚本分享</a>
+					<a href="https://hub.連接.台灣/skyformat99/shell_repository" target="_blank" title="https://hub.連接.台灣/skyformat99/shell_repository"
+					class="hvr-grow-shadow">shell常用分析命令和运维脚本</a>
+					<a href="https://hub.連接.台灣/Lancger/opslinux" target="_blank" title="https://hub.連接.台灣/Lancger/opslinux"
+					class="hvr-grow-shadow">Linux运维手册</a>
+					<a href="https://hub.連接.台灣/solo1d/Linux" target="_blank" title="https://hub.連接.台灣/solo1d/Linux"
+					class="hvr-grow-shadow">Linux维护命令笔记</a>
+					<a href="https://ahuang007.github.io/Linux-Command/" target="_blank" title="https://hub.連接.台灣/ahuang007/Linux-Command"
+					class="hvr-grow-shadow">Linux 命令大全</a>
+					<a href="https://aq2.cn/c/kjyw" target="_blank" title="https://hub.連接.台灣/aqzt/kjyw"
+					class="hvr-grow-shadow">快捷运维</a>
+					<a href="https://hub.連接.台灣/mritd/shell_scripts" target="_blank" title="https://hub.連接.台灣/mritd/shell_scripts"
+					class="hvr-grow-shadow">常用的一些 shell 脚本</a>
+					<a href="https://hub.連接.台灣/zdwork/k8s-install" target="_blank" title="https://hub.連接.台灣/zdwork/k8s-install"
+					class="hvr-grow-shadow">kubernetes集群安装脚本</a>
+					<a href="https://hub.連接.台灣/lebronhkh/mysqlyunwei" target="_blank" title="https://hub.連接.台灣/lebronhkh/mysqlyunwei"
+					class="hvr-grow-shadow">mysql 运维脚本</a>
+					<a href="https://hub.連接.台灣/FunctionClub/EasyCDN" target="_blank" title="https://hub.連接.台灣/FunctionClub/EasyCDN"
+					class="hvr-grow-shadow">CDN 服务器自动安装脚本</a>
+					<a href="https://hub.連接.台灣/dongwenpeng/zabbix" target="_blank" title="https://hub.連接.台灣/dongwenpeng/zabbix"
+					class="hvr-grow-shadow">zabbix基础监控模板和脚本</a>
+					<a href="https://hub.連接.台灣/meetbill/shell_menu" target="_blank" title="https://hub.連接.台灣/meetbill/shell_menu"
+					class="hvr-grow-shadow">统一管理脚本框架</a>
+					<a href="https://hub.連接.台灣/luckman666/k8s1.15.2" target="_blank" title="https://hub.連接.台灣/luckman666/k8s1.15.2"
+					class="hvr-grow-shadow">k8s1.15.2一键部署脚本</a>
+					<a href="https://hub.連接.台灣/scfido/k8s-offline-setup" target="_blank" title="https://hub.連接.台灣/scfido/k8s-offline-setup"
+					class="hvr-grow-shadow">Kubernetes 离线安装脚本</a>
+					<a href="https://hub.連接.台灣/Ljohn001/ljohn_ops" target="_blank" title="https://hub.連接.台灣/Ljohn001/ljohn_ops"
+					class="hvr-grow-shadow">Linux运维工作中常用的shell脚本</a>
+					<a href="https://hub.連接.台灣/alicfeng/AShell" target="_blank" title="https://hub.連接.台灣/alicfeng/AShell"
+					class="hvr-grow-shadow">开发者常用脚本shell AShell</a>
+					<a href="https://hub.連接.台灣/kellanfan/shell" target="_blank" title="https://hub.連接.台灣/kellanfan/shell"
+					class="hvr-grow-shadow">shell脚本</a>
+					<a href="https://hub.連接.台灣/bboysoulcn/centos" target="_blank" title="https://hub.連接.台灣/bboysoulcn/centos"
+					class="hvr-grow-shadow">centos的初始化脚本</a>
+					<a href="https://hub.連接.台灣/xiaoyunjie/Shell_Script target="_blank" title="https://hub.連接.台灣/xiaoyunjie/Shell_Script"
+					class="hvr-grow-shadow">脚本对Linux系统进行一键检测和一键加固</a>
+					<a href="https://hub.連接.台灣/hcymysql/mysql_install" target="_blank" title="https://hub.連接.台灣/hcymysql/mysql_install"
+					class="hvr-grow-shadow">MySQL 8.0 MGR自动安装配置脚本</a>
+					<a href="https://hub.連接.台灣/jiangzhenjie/SSL-Cert" target="_blank" title="https://hub.連接.台灣/jiangzhenjie/SSL-Cert"
+					class="hvr-grow-shadow">HTTPS自签名证书生成脚本</a>
+					<a href="https://hub.連接.台灣/skymyyang/devscripts" target="_blank" title="https://hub.連接.台灣/skymyyang/devscripts"
+					class="hvr-grow-shadow">一个运维小兵写的脚本</a>
+					<a href="https://hub.連接.台灣/share-group/shell" target="_blank" title="https://hub.連接.台灣/share-group/shell"
+					class="hvr-grow-shadow">一键傻瓜式部署centos服务器环境shell脚本</a>
+					<a href="https://lamp.sh/" target="_blank" title="https://hub.連接.台灣/teddysun/lamp"
+					class="hvr-grow-shadow">lamp.sh</a>
+					<a href="http://billie66.github.io/TLCL" target="_blank" title="https://hub.連接.台灣/billie66/TLCL"
+					class="hvr-grow-shadow">快乐的 Linux 命令行</a>
+					<a href="http://billie66.github.io/TLCL" target="_blank" title="https://hub.連接.台灣/billie66/TLCL"
+					class="hvr-grow-shadow">快乐的 Linux 命令行</a>
+					<a href="http://billie66.github.io/TLCL" target="_blank" title="https://hub.連接.台灣/billie66/TLCL"
+					class="hvr-grow-shadow">快乐的 Linux 命令行</a>
+                        </div>
+                </section>
+            </main>
+            <main>
+                <div>
+                    <input id="tab18" type="radio" name="tabs">
+                    <label for="tab18">前端文章</label>
+                    <input id="tab19" type="radio" name="tabs">
+                    <label for="tab19">文章摘要 2</label>
+                    <input id="tab20" type="radio" name="tabs">
+                    <label for="tab20">文章摘要 3</label>
+                    <input id="tab21" type="radio" name="tabs">
+                    <label for="tab21">文章摘要 4</label>
+                </div>
+                <section class="scroll">
+                    <div id="effects" class="effects">
+                        <a href="https://juejin.cn/post/7043758954496655397" target="_blank" title="来源：掘金 作者：圆圆01"
+                            class="hvr-grow-shadow">手写Promise</a>
+                        <a href="https://juejin.cn/post/6946022649768181774" target="_blank" title="来源：掘金 作者：大海我来了"
+                            class="hvr-grow-shadow">死磕 36 个 JS 手写题</a>
+                            <a href="https://mp.weixin.qq.com/s/JAOZ-NZoPnmAhL-9l0WKKQ" target="_blank"
+                            class="hvr-grow-shadow">CSS 奇思妙想边框动画</a>
+                    </div>
+                </section>
+                <section class="scroll">
+                    <div id="effects" class="effects">
+                        <a href="https://www.acfun.cn/player/ac30110368" target="_blank"
+                            class="hvr-grow-shadow">大热门20210630</a>
+                    </div>
+                </section>
+                <section class="scroll">
+                    <div id="effects" class="effects">
+                        <a href="https://www.acfun.cn/player/ac33321977" target="_blank"
+                            class="hvr-grow-shadow">大热门20220125</a>
+                    </div>
+                </section>
+                <section class="scroll">
+                    <div id="effects" class="effects">
+                        <a href="https://www.sassmeister.com/" target="_blank" class="hvr-grow-shadow">sassmeister</a>
+                        <a href="https://www.sass.hk/css2sass/" target="_blank" class="hvr-grow-shadow">CSS转Sass
+                            Sass转换器</a>
+                        <a href="https://mp.weixin.qq.com/s/JAOZ-NZoPnmAhL-9l0WKKQ" target="_blank"
+                            class="hvr-grow-shadow">CSS 奇思妙想边框动画</a>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <div class='right'>
+        <div class='app'>
+            <div class='app_inner'>
+                <input checked id='tab-1' name='buttons' type='radio'>
+                <label for='tab-1'>
+                    <div class='app_inner__tab'>
+                        <h2>
+                            <i class='icon ion-android-alarm-clock'></i>
+                            综艺大热门
+                        </h2>
+                        <div class='tab_left'>
+                            <!-- <i class='big icon ion-android-color-palette'></i> -->
+                            <img src="./images/zydrm.jpg" class="big" alt="综艺大热门">
+                            <div class='tab_left__image'>
+                                <!-- <i class='icon ion-android-color-palette'></i> -->
+                                <img src="./images/zydrm.jpg" alt="综艺大热门">
+                            </div>
+                        </div>
+                        <div class='tab_right'>
+                            <h3>播出频道：三立都会台</h3>
+                            <h4>主持人：吴宗宪,欧汉声,陈汉典,LuLu</h4>
+                            <p>每周一至周五晚21:00-22:00</p>
+                            <a href="http://www.zyshow.net/daremen/" title="综艺大热门zyshow" target="_blank">
+                                <button>详情</button>
+                            </a>
+                        </div>
+                    </div>
+                </label>
+                <input id='tab-2' name='buttons' type='radio'>
+                <label for='tab-2'>
+                    <div class='app_inner__tab'>
+                        <h2>
+                            <i class='icon ion-android-alarm-clock'></i>
+                            综艺节目
+                        </h2>
+                        <div class='tab_left'>
+                            <i class='big icon ion-ios-film-outline'></i>
+                            <div class='tab_left__image'>
+                                <i class='icon ion-ios-film-outline'></i>
+                            </div>
+                        </div>
+                        <div class='tab_right'>
+                            <h3>韩综 台综等</h3>
+                            <h4>Monday - Wednesday</h4>
+                            <p>Music for your lug holes</p>
+                            <!-- <button>More information</button> -->
+                        </div>
+                    </div>
+                </label>
+                <input id='tab-3' name='buttons' type='radio'>
+                <label for='tab-3'>
+                    <div class='app_inner__tab'>
+                        <h2>
+                            <i class='icon ion-android-alarm-clock'></i>
+                            影视
+                        </h2>
+                        <div class='tab_left'>
+                            <i class='big icon ion-android-microphone'></i>
+                            <div class='tab_left__image'>
+                                <i class='icon ion-android-microphone'></i>
+                            </div>
+                        </div>
+                        <div class='tab_right'>
+                            <h3>Steven Fry podcast</h3>
+                            <h4>Staurday - Sunday</h4>
+                            <p>Steven Fry says words</p>
+                            <button>More information</button>
+                        </div>
+                    </div>
+                </label>
+                <input id='tab-4' name='buttons' type='radio'>
+                <label for='tab-4'>
+                    <div class='app_inner__tab'>
+                        <h2>
+                            <i class='icon ion-android-alarm-clock'></i>
+                            网站
+                        </h2>
+                        <div class='tab_left'>
+                            <i class='big icon ion-android-bar'></i>
+                            <div class='tab_left__image'>
+                                <i class='icon ion-android-bar'></i>
+                            </div>
+                        </div>
+                        <div class='tab_right'>
+                            <h3>Massive event</h3>
+                            <h4>Monday - Friday</h4>
+                            <p>Some kind of music festival</p>
+                            <button>More information</button>
+                        </div>
+                    </div>
+                </label>
+                <input id='tab-5' name='buttons' type='radio'>
+                <label for='tab-5'>
+                    <div class='app_inner__tab'>
+                        <h2>
+                            <i class='icon ion-android-alarm-clock'></i>
+                            博客摘要
+                        </h2>
+                        <div class='tab_left'>
+                            <i class='big icon ion-android-color-palette'></i>
+                            <!-- <img src="./images/xzgmn.jpg" class="big" alt="闲着干嘛呢"> -->
+                            <div class='tab_left__image'>
+                                <i class='icon ion-android-color-palette'></i>
+                                <!-- <img src="./images/xzgmn.jpg" alt="闲着干嘛呢"> -->
+                            </div>
+                        </div>
+                        <div class='tab_right'>
+                            <h3>Massive event</h3>
+                            <h4>Monday - Friday</h4>
+                            <p>Some kind of music festival</p>
+                            <a href="https://program.imbc.com/hangoutwithyoo/" title="闲着干嘛呢" target="_blank">
+                                <button>hangout with yoo</button>
+                            </a>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+    <script>
+        let leftInputs = document.querySelectorAll('.left input[type=radio]')
+        let sections = document.querySelectorAll('.left section')
+        let s = sections[0]
+        if (s) {
+            s.style.display = 'block'
+        }
+        function fn(e, index) {
+            index = index ?? 0
+            elemetsSetDisplayFlase(sections)
+            let section = sections[index]
+            if (section) {
+                section.style.display = 'block'
+            }
+        }
+        leftInputs.forEach((item, index, arr) => {
+            //阻止默认行为
+            item.addEventListener('click', ev => fn(ev, index));
+            //取消阻止默认行为 注：解除绑定事件的时候一定要用函数的句柄，把整个函数写上是无法解除绑定的
+        })
+    </script>
+    <script>
+        let righInputs = document.querySelectorAll('.right input[type=radio]')
+        righInputs.forEach((item, index, arr) => {
+            item.addEventListener('click', ev => eventFn(ev, index))
+        })
+        let leftMains = document.querySelectorAll('.left main')
+        function eventFn(event, index) {
+            console.log(index)
+            for (let key of leftMains.keys()) {
+                leftMains[key].style.display = 'none'
+            }
+            index = index ?? 0
+            let leftMain = leftMains[index]
+            if (leftMain) {
+                leftMain.style.display = 'block'
+                radioInputsSetFalse(leftInputs)
+                leftMain.querySelector("input[type=radio]:first-child").checked = true
+                elemetsSetDisplayFlase(sections)
+                leftMain.querySelectorAll("section").item(0).style.display = 'block'
+            }
+        }
+        function radioInputsSetFalse(radioInputs) {
+            for (let key of radioInputs.keys()) {
+                radioInputs[key].checked = false
+            }
+        }
+        function elemetsSetDisplayFlase(elements) {
+            for (let key of elements.keys()) {
+                elements[key].style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
